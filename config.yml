@@ -1,0 +1,37 @@
+# Site 网站
+title: YanHuo~DevOps~!
+subtitle: 烟火的运维知识库
+description: 记录和分享IT互联网运维类知识库~
+language: zh-CN
+timezone: Asia/Shanghai
+author: 烟火0775
+
+# 文章
+post_asset_folder: true
+
+# 扩展
+theme: next
+
+# 插件
+markdown:
+  preset: 'default'
+  render:
+    html: true
+    xhtmlOut: false
+    langPrefix: 'language-'
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  enable_rules:
+  disable_rules:
+  plugins:
+  anchors:
+    level: 2
+    collisionSuffix: ''
+    permalink: false
+    permalinkClass: 'header-anchor'
+    permalinkSide: 'left'
+    permalinkSymbol: '¶'
+    case: 0
+    separator: '-'
