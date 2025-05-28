@@ -14,4 +14,4 @@ git clone https://github.com/fluid-dev/hexo-theme-fluid themes/hexo-theme-fluid
 npm install --save hexo-theme-fluid
 
 # 开始构建
-cd hexo && hexo g --config config.yml
+hexo g --config config.yml
