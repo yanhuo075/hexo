@@ -18,9 +18,6 @@ npm i hexo-renderer-markdown-it --save
 # 处理图片
 npm i hexo-image-link --save
 
-# 复制文章到指定目录
-cd ../
-cp -r `ls | grep -v hexo | grep -v config.yml | xargs` hexo/source/_posts
 # 复制配置文件
 cp config.yml hexo
 
