@@ -27,13 +27,6 @@ nav:
 
 menu:
   首页: / || fa fa-home
-  归档: /archives/ || fa fa-archive
-  标签: /tags/ || fa fa-tags
-  分类: /categories/ || fa fa-folder-open
-  友链: /link/ || fa fa-link
-  更多 || fa fa-list:
-    - 关于 || /about/ || fa fa-sitemap
-    - butterfly主题 || https://github.com/jerryc127/hexo-theme-butterfly/ || fa fa-heart
 
 # --------------------------------------
 # 代碼塊設置
@@ -80,16 +73,17 @@ avatar:
   effect: false
 
 # 禁用所有橫幅圖片
-disable_top_img: false
+disable_top_img: true
 
 # 如果頁面未設置橫幅，則顯示默認的橫幅圖片
-default_top_img:
+default_top_img: img/index-background.jpg
 
 # 主頁的橫幅圖片
-index_img: 
+#index_img: 
+index_img: img/index-background.jpg
 
 # 歸檔頁的橫幅圖片
-archive_img:
+archive_img: 
 
 # 注意: 是標籤頁（單個標籤），不是標籤頁面（所有標籤）
 tag_img:
@@ -100,7 +94,7 @@ tag_img:
 tag_per_img:
 
 # 注意: 是分類頁（單個分類），不是分類頁面（所有分類）
-category_img:
+category_img: 
 
 # 分類頁的橫幅圖片，可以為每個分類設置橫幅圖片
 # 格式:
@@ -108,12 +102,14 @@ category_img:
 category_per_img:
 
 # 頁腳的背景圖片
-footer_img: false
+footer_img: 
 
 # 網站背景
 # 可以設置為顏色或圖片
 # 圖片格式: url(http://xxxxxx.com/xxx.jpg)
-background:
+#background: 
+background: linear-gradient(225deg, rgba(130, 205, 224, 1.000) 0.000%, rgba(149, 201, 222, 1.000) 16.667%, rgba(174, 200, 216, 1.000) 33.333%, rgba(202, 201, 208, 1.000) 50.000%, rgba(232, 206, 199, 1.000) 66.667%, rgba(255, 213, 194, 1.000) 83.333%, rgba(255, 221, 192, 1.000) 100.000%)
+
 
 # 封面設置
 cover:
@@ -991,7 +987,7 @@ canvas_ribbon:
   # 是否點擊更改顏色
   click_to_change: false
   # 是否在移動設備上啟用
-  mobile: false
+  mobile: true
 
 # Fluttering Ribbon
 canvas_fluttering_ribbon:
@@ -1215,8 +1211,9 @@ css_prefix: true
 # 插入代碼到 head（在 '</head>' 標籤之前）和底部（在 '</body>' 標籤之前）
 inject:
   head:
+    - <link rel="stylesheet" href="css/footer.css" >
+    #- <link rel="stylesheet" href="css/custom.css">
     # - <link rel="stylesheet" href="/xxx.css">
-    - <link rel="stylesheet" href="css/footer.css" media="defer" onload="this.media='all'">
   bottom:
     # - <script src="xxxx"></script>
 
