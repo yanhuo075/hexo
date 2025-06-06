@@ -86,7 +86,7 @@ disable_top_img: false
 default_top_img:
 
 # 主頁的橫幅圖片
-index_img: img/20250605211339.png
+index_img: 
 
 # 歸檔頁的橫幅圖片
 archive_img:
@@ -1216,6 +1216,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="css/footer.css" media="defer" onload="this.media='all'">
   bottom:
     # - <script src="xxxx"></script>
 
